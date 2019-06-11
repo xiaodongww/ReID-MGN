@@ -6,6 +6,15 @@ parser.add_argument('--data_path',
                     default="Market-1501-v15.09.15",
                     help='path of Market-1501-v15.09.15')
 
+parser.add_argument('--output_dir',
+                    default="./output/base",
+                    help='output_dir')
+
+parser.add_argument('--dataset',
+                    default="csm",
+                    help='dataset name, csm or market1501')
+
+
 parser.add_argument('--mode',
                     default='train', choices=['train', 'evaluate', 'vis'],
                     help='train or evaluate ')

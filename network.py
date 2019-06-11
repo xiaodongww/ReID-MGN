@@ -3,7 +3,8 @@ import torch
 import torch.nn as nn
 from torchvision.models.resnet import resnet50, Bottleneck
 
-num_classes = 751  # change this depend on your dataset
+# num_classes = 751  # change this depend on your dataset market1501
+num_classes = 1648  # for CSM datatset
 
 
 class MGN(nn.Module):
